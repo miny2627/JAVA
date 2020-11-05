@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class example {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("식을 입력하세요>>");
+		double op1 = s.nextInt();
+		String opr = s.next();
+		double op2 = s.nextInt();
+		
+		double result = 0;
+		switch(opr){
+			case "+":
+				System.out.println();
+				break;
+			case "-":
+				System.out.println("Excellent");
+				break;
+			case "*": 
+				System.out.println("Excellent");
+				break;
+			case "-":
+				System.out.println("Good");
+				break;
+			default:
+				System.out.println("연산 기호가 잘못되었습니다.");
+				break;
+				
+		}
+	}
+}

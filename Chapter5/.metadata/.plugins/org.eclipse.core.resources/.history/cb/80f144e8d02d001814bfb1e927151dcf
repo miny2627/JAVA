@@ -1,0 +1,6 @@
+
+public class Subtracter {
+	public int calc() {
+		return a - b;
+	}
+}

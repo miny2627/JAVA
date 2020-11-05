@@ -1,0 +1,15 @@
+
+public class Player {
+	private String name;
+	
+	public Player(String name) {
+		this.name = name;
+	}
+	
+	public Sting getName() { return name; }
+	
+	String sayWord()
+	boolean succeed() {
+		
+	}
+}

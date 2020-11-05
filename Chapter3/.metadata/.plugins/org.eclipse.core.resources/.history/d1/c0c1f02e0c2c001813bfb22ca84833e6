@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class example {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int num = (int)(Math.random()*100);
+		Scanner s = new Scanner(System.in);
+		while(true) {
+			
+			if (num == 99)
+				break;
+		}
+		System.out.print("다시 하시겠습니까(y/n)>>");
+		String a = s.next();
+		if (a.equals("y"))
+			break;
+	}
+}

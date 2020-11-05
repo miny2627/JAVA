@@ -1,0 +1,23 @@
+
+public class Player {
+	private String name, word;
+	
+	public Player(String name) {
+		this.name = name;
+	}
+	
+	public String getName() { return name; }
+	
+	public void sayWord(String word) {
+		this.word = word;
+	}
+	
+	public boolean succeed(char lastchar) {
+		char fistChar = word.charAt(0);
+		if (word.charAt(0) == lastchar) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+}

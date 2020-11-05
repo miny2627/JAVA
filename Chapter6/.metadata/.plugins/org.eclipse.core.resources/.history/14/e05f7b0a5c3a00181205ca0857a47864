@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class example {
+	String readString() {
+		StringBuffer sb = new StringBuffer();
+		Scanner s = new Scanner(System.in);
+		while (true) {
+			String line = s.nextLine();
+		}
+		return
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

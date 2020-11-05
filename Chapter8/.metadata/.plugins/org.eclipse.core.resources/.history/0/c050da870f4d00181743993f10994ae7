@@ -1,0 +1,25 @@
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class example extends JFrame {
+	example(){
+		setTitle("BorderLayout Practice");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container contentPane = getContentPane();
+		
+		contentPane.setLayout(new FlowLayout());
+		contentPane.add(new JButton("="));
+		setSize(400, 200);
+		setVisible(true);
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new example();
+	}
+
+}

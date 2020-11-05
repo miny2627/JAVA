@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class example {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("가위 바위 보 게임입니다. 가위, 바위, 보 중에서 입력하세요>>");
+		System.out.print("철수>>");
+		boolean a = s.nextBoolean();
+		System.out.print("영희>>");
+		boolean b = s.nextBoolean();
+		
+		switch(op){
+			case "AND":
+				System.out.println(a & b);
+				break;
+			case "OR":
+				System.out.println(a | b);
+				break;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+import java.awt.BorderLayout;
+import java.awt.Container;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class example extends JFrame {
+	example(){
+		setTitle("Open Challenge 8");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container contentPane = getContentPane();
+		
+		contentPane.setLayout(new BorderLayout(5, 7));
+		contentPane.add(new JButton("North"), BorderLayout.NORTH);
+		contentPane.add(new JButton("Java"), BorderLayout.CENTER);
+		setSize(400, 200);
+		setVisible(true);
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new example();
+	}
+
+}

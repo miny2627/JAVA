@@ -1,0 +1,31 @@
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class example extends JFrame {
+	example(){
+		setTitle("Open Challenge 8");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container contentPane = getContentPane();
+		
+		contentPane.setLayout(new BorderLayout());
+		
+		CenterPanel cp = new CenterPanel();
+		cp.setLayout(null);
+		JLabel label = new JLabel("Java");
+		
+		setSize(400, 200);
+		setVisible(true);
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new example();
+	}
+
+}

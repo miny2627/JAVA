@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class GraphicEditor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner s = new Scanner(System.in);
+		Shape sp[] = new Shape[3];
+		for (int i=0; i<3; i++)
+			sp[i] = null;
+
+		while(true) {
+			System.out.print("삽입(1), 삭제(2), 모두 보기(3), 종료(4)>>");
+			int n = s.nextInt();
+			
+			switch(n) {
+				case 1:
+					System.out.print("도형 종류 Line(1), Rect(2), Circle(3)>>");
+					int a = s.nextInt();
+					if ((a-1) == 0)
+						sp[a-1] = new Line();
+					else if ((a-1) == 1)
+						sp[a-1] = new Rect();
+					else
+						sp[a-1] = new Circle();
+					break;
+				case 2:
+					if (sp[a-1] == null)
+						System.out.println("삭제할 수 없습니다.");
+					else
+						sp[a-1] = null;
+				case 3:
+					for (int i=0; i<3; i++)
+						if (sp[i] != null)
+							sp[i].draw();
+				case 4:
+					System.exit(1);
+					break;
+				default:
+					System.out.println("1~4 사이의 숫자를 입력해야 합니다.");
+			}
+		}
+	}
+
+}

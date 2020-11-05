@@ -1,0 +1,19 @@
+
+public class StackManager {
+	private int MAX, length;
+	
+	public StackManager() {
+		MAX = 10;
+		length = 0;
+	}
+	
+	int length() { return length; }
+	String pop();
+	boolean push(String ob);
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

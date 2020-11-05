@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class example {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		
+		System.out.print("돈의 액수를 를 입력하세요>>");
+		
+		System.out.println("오만원" + n/50000 + "개");
+	}
+
+}

@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class example {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		String abc[] = {"가위", "바위", "보"};
+		
+		while(true) {
+			System.out.print("가위(1), 바위(2), 보(3), 끝내기(4)>>");
+			int n = s.nextInt();
+			if (n == 4)
+				break;
+			String user = abc[n];
+			String com = abc[(int)(Math.random()*3)];
+			System.out.println("사용자 " + user + " : " + "컴퓨터 " + com);
+			if (user.equals("가위")) {
+				if (com.equals("가위")) {
+					System.out.println("비겼습니다.");
+				}else if(com.equals("바위"))
+					System.out.println("컴퓨터가 이겼습니다.");
+				else { //com == "보"
+					System.out.println("사용자가 이겼습니다..");
+				}
+			}else if(user.equals("바위")) {
+				if (com.equals("가위")) {
+					System.out.println("비겼습니다.");
+				}else if(com.equals("바위"))
+					System.out.println("컴퓨터가 이겼습니다.");
+				else { //com == "보"
+					System.out.println("사용자가 이겼습니다..");
+				}
+			}else { // user == "보"
+				if (com.equals("가위")) {
+					System.out.println("비겼습니다.");
+				}else if(com.equals("바위"))
+					System.out.println("컴퓨터가 이겼습니다.");
+				else { //com == "보"
+					System.out.println("사용자가 이겼습니다..");
+				}
+			}
+	}
+
+}

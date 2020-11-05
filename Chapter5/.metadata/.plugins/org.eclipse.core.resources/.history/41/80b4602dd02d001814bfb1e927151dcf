@@ -1,0 +1,13 @@
+public class MyAdder implements AdderInterFace{
+	public MyAdder() {
+	}
+	
+	int add(int x, int y);
+	int add(int n);
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

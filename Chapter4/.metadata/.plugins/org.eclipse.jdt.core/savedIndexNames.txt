@@ -1,0 +1,9 @@
+INDEX VERSION 1.130+C:\Users\default.DESKTOP-IBS7LQ4\Documents\java2018\Chapter4\.metadata\.plugins\org.eclipse.jdt.core
+335679769.index
+2366324899.index
+1068431352.index
+326096128.index
+4195119157.index
+1684596118.index
+4242806722.index
+2321974458.index

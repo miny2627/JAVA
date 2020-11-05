@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Phone {
+	private String name, tel;
+	
+	public Phone(String name, String tel) {
+		this.name = name;
+		this.tel = tel;
+	}
+	
+	public String getName() { return this.name; }
+	public String getTel() { return this.tel; }
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		
+		Phone p1, p2;
+		for (int i =0; i<2; i++) {
+			String n = s.next();
+			String t = s.next();
+			p1 = new Phone(n,t);
+		}
+	}
+
+}
